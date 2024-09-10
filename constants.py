@@ -1,0 +1,10 @@
+# Replace with your own OpenAI API Key https://platform.openai.com/account/api-keys
+APIKEY = "secured"
+APIBASE = "secured"
+APITYPE = "secured"
+APIVERSION = "secured"
+API_VERSION = "secured"
+DEPLOYMENT= "secured"
+XSERVICELINE = "secured"
+XBRAND = "secured"
+XPROJECT = "secured"
