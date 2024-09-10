@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Search</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        text-align: center;
+      }
+      .banner {
+        color: rgb(0, 0, 0);
+        padding: 50px 0;
+      }
+      .container {
+        margin: 20px auto;
+        width: 50%;
+        background: white;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        box-sizing: border-box;
+      }
+      button {
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+      .loader {
+        border: 8px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 8px solid #3498db;
+        width: 60px;
+        height: 60px;
+        animation: spin 2s linear infinite;
+        display: none;
+        margin: 20px auto;
+      }
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      .results {
+        white-space: pre-wrap;
+        text-align: left;
+        padding: 10px;
+        margin-top: 20px;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      function showLoader() {
+        document.getElementById("loader").style.display = "block";
+      }
+
+      function hideLoader() {
+        document.getElementById("loader").style.display = "none";
+      }
+
+      $(document).ready(function () {
+        $("form").on("submit", function (event) {
+          event.preventDefault();
+          showLoader();
+          $.ajax({
+            url: "/search",
+            method: "POST",
+            data: $(this).serialize(),
+            success: function (data) {
+              hideLoader();
+              let resultsContainer = $(".results");
+              resultsContainer.empty();
+              if ($.isEmptyObject(data)) {
+                resultsContainer.append("<p>No results found.</p>");
+              } else {
+                resultsContainer.text(data);
+              }
+            },
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="banner">
+      <h1>University Finder</h1>
+    </div>
+    <div class="container">
+      <form>
+        <input
+          type="text"
+          name="query"
+          placeholder="Search for universities/courses/admission process/alumni/career_paths/employers"
+          required
+        />
+        <button type="submit">Search</button>
+      </form>
+      <div id="loader" class="loader"></div>
+      <div class="results"></div>
+    </div>
+  </body>
+</html>
