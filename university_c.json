@@ -1,0 +1,87 @@
+{
+  "name": "University C",
+  "courses": [
+    {
+      "course_name": "Introduction to Psychology",
+      "description": "An introductory course covering the fundamentals of psychology, including cognitive and behavioral theories."
+    },
+    {
+      "course_name": "Environmental Science",
+      "description": "A course exploring the principles of environmental science, including ecosystems, pollution, and conservation."
+    },
+    {
+      "course_name": "Business Management",
+      "description": "A comprehensive course on business management principles, including leadership, strategy, and operations."
+    }
+  ],
+  "admission_process": [
+    {
+      "step_name": "Step 1",
+      "description": "Complete the online application and submit the required fee."
+    },
+    {
+      "step_name": "Step 2",
+      "description": "Provide academic transcripts, test scores, and personal essays."
+    },
+    {
+      "step_name": "Step 3",
+      "description": "Attend an interview with the admissions panel, either virtually or in person."
+    }
+  ],
+  "teacher_profiles": [
+    {
+      "teacher_name": "Dr. Robert Miller",
+      "description": "Professor of Psychology with expertise in cognitive psychology and mental health."
+    },
+    {
+      "teacher_name": "Dr. Susan Clark",
+      "description": "Professor of Environmental Science specializing in climate change and sustainability."
+    },
+    {
+      "teacher_name": "Dr. William Johnson",
+      "description": "Professor of Business Management with a focus on strategic management and entrepreneurship."
+    }
+  ],
+  "alumni_info": [
+    {
+      "alumni_name": "Olivia Martinez",
+      "description": "Graduated in 2012 with a degree in Psychology. Currently a clinical psychologist."
+    },
+    {
+      "alumni_name": "Liam Harris",
+      "description": "Graduated in 2014 with a degree in Environmental Science. Working as an environmental consultant."
+    },
+    {
+      "alumni_name": "Sophia Robinson",
+      "description": "Graduated in 2017 with a degree in Business Management. Now a business analyst at a multinational corporation."
+    }
+  ],
+  "career_paths": [
+    {
+      "path_name": "Clinical Psychology",
+      "description": "Graduates can pursue careers in clinical psychology, providing mental health services."
+    },
+    {
+      "path_name": "Environmental Consulting",
+      "description": "Opportunities in environmental consulting involve advising organizations on environmental practices."
+    },
+    {
+      "path_name": "Business Analysis",
+      "description": "Graduates can work as business analysts, helping companies improve their operations and strategies."
+    }
+  ],
+  "employers": [
+    {
+      "employer_name": "Mental Health Center",
+      "description": "A leading mental health organization providing a range of psychological services."
+    },
+    {
+      "employer_name": "EcoConsult",
+      "description": "A major environmental consulting firm known for its sustainability projects."
+    },
+    {
+      "employer_name": "Global Business Solutions",
+      "description": "A multinational corporation specializing in business consulting and strategy."
+    }
+  ]
+}

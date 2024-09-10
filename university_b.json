@@ -1,0 +1,87 @@
+{
+  "name": "University B",
+  "courses": [
+    {
+      "course_name": "Introduction to Biology",
+      "description": "A foundational course covering the basics of biology, including cell structure, genetics, and evolution."
+    },
+    {
+      "course_name": "Organic Chemistry",
+      "description": "An in-depth study of organic compounds, their structures, properties, and reactions."
+    },
+    {
+      "course_name": "World History",
+      "description": "A comprehensive overview of major events and themes in world history from ancient times to the present."
+    }
+  ],
+  "admission_process": [
+    {
+      "step_name": "Step 1",
+      "description": "Fill out the online application form and pay the application fee."
+    },
+    {
+      "step_name": "Step 2",
+      "description": "Submit official transcripts, standardized test scores, and letters of recommendation."
+    },
+    {
+      "step_name": "Step 3",
+      "description": "Participate in a personal interview with the admissions team."
+    }
+  ],
+  "teacher_profiles": [
+    {
+      "teacher_name": "Dr. Sarah Lee",
+      "description": "Professor of Biology with a focus on molecular biology and genetics."
+    },
+    {
+      "teacher_name": "Dr. Michael Brown",
+      "description": "Professor of Chemistry specializing in organic synthesis and chemical biology."
+    },
+    {
+      "teacher_name": "Dr. Laura Davis",
+      "description": "Professor of History with research interests in medieval and early modern history."
+    }
+  ],
+  "alumni_info": [
+    {
+      "alumni_name": "David Wilson",
+      "description": "Graduated in 2011 with a degree in Biology. Currently a research scientist at a biotech company."
+    },
+    {
+      "alumni_name": "Emma Thompson",
+      "description": "Graduated in 2013 with a degree in Chemistry. Now a pharmaceutical chemist at a major drug company."
+    },
+    {
+      "alumni_name": "James Anderson",
+      "description": "Graduated in 2016 with a degree in History. Working as a historian and author."
+    }
+  ],
+  "career_paths": [
+    {
+      "path_name": "Biotechnology",
+      "description": "Graduates can work in biotechnology firms, focusing on research and development of new products."
+    },
+    {
+      "path_name": "Pharmaceuticals",
+      "description": "Opportunities in the pharmaceutical industry involve drug development and quality control."
+    },
+    {
+      "path_name": "Historical Research",
+      "description": "Graduates can engage in historical research, writing, and teaching at various institutions."
+    }
+  ],
+  "employers": [
+    {
+      "employer_name": "BioTech Solutions",
+      "description": "A leading biotechnology company known for its innovative research and product development."
+    },
+    {
+      "employer_name": "PharmaCorp",
+      "description": "A major pharmaceutical company specializing in drug discovery and development."
+    },
+    {
+      "employer_name": "History Institute",
+      "description": "A renowned research institution focusing on historical studies and publications."
+    }
+  ]
+}
